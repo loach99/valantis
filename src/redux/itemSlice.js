@@ -8,7 +8,7 @@ export const fetchGetProductCount = createAsyncThunk(
         try {
             const response = await fetch('http://api.valantis.store:40000/', {
                 method: 'POST',
-                referrerPolicy: "unsafe_url",
+                referrerPolicy: "unsafe-url",
                 headers: {
                     'Content-Type': 'application/json',
                     'X-Auth': md5('Valantis_' + moment().format('YYYYMMDD'))
@@ -28,7 +28,7 @@ export const fetchGetProduct = createAsyncThunk(
         try {
             const response = await fetch('http://api.valantis.store:40000/', {
                 method: 'POST',
-                referrerPolicy: "unsafe_url",
+                referrerPolicy: "unsafe-url",
                 headers: {
                     'Content-Type': 'application/json',
                     'X-Auth': md5('Valantis_' + moment().format('YYYYMMDD'))
@@ -48,7 +48,7 @@ export const fetchGetId = createAsyncThunk(
         try {
             const response = await fetch('http://api.valantis.store:40000/', {
                 method: 'POST',
-                referrerPolicy: "unsafe_url",
+                referrerPolicy: "unsafe-url",
                 headers: {
                     'User-agent': 'learning app',
                     'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ export const fetchGetFields = createAsyncThunk(
         try {
             const response = await fetch('http://api.valantis.store:40000/', {
                 method: 'POST',
-                referrerPolicy: "unsafe_url",
+                referrerPolicy: "unsafe-url",
                 headers: {
                     'User-agent': 'learning app',
                     'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ export const fetchGetProductByBrand = createAsyncThunk(
         try {
             const response = await fetch('http://api.valantis.store:40000/', {
                 method: 'POST',
-                referrerPolicy: "unsafe_url",
+                referrerPolicy: "unsafe-url",
                 headers: {
                     'User-agent': 'learning app',
                     'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ export const fetchGetProductByPrice = createAsyncThunk(
         try {
             const response = await fetch('http://api.valantis.store:40000/', {
                 method: 'POST',
-                referrerPolicy: "unsafe_url",
+                referrerPolicy: "unsafe-url",
                 headers: {
                     'User-agent': 'learning app',
                     'Content-Type': 'application/json',
@@ -132,7 +132,7 @@ export const fetchGetProductByName = createAsyncThunk(
         try {
             const response = await fetch('http://api.valantis.store:40000/', {
                 method: 'POST',
-                referrerPolicy: "unsafe_url",
+                referrerPolicy: "unsafe-url",
                 headers: {
                     'User-agent': 'learning app',
                     'Content-Type': 'application/json',
