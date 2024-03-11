@@ -1,0 +1,20 @@
+.selected_page{
+  color: red;
+}
+.page{
+  font-size: 20px;
+}
+.pagination{
+  display: flex;
+}
+.pagination>li{
+  list-style-type: none;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+.pagination>.selected{
+  font-weight: 800;
+}
+
